@@ -1,4 +1,8 @@
-import "./Sidebar.scss";
+import "./sidebar.scss";
+import DashboardIcon from '@mui/icons-material/Dashboard';
+import VideogameAssetIcon from '@mui/icons-material/VideogameAsset';
+import AnalyticsIcon from '@mui/icons-material/Analytics';
+import SearchIcon from '@mui/icons-material/Search';
 
 const Sidebar = () => {
     return ( 
@@ -9,21 +13,31 @@ const Sidebar = () => {
             <hr />
             <div className="center">
                 <ul>
+                    <p className="title">MAIN</p>
                     <li>
+                        <DashboardIcon className="icon"/>
                      <span>Dashboard</span>
                     </li>
+                    <p className="title">LISTS</p>
                     <li>
-                     <span>Dashboard</span>
+                        <VideogameAssetIcon className="icon"/>
+                     <span>Consoles</span>
                     </li>
                     <li>
-                     <span>Dashboard</span>
+                        <AnalyticsIcon className="icon"/>
+                     <span>Graph</span>
                     </li>
                     <li>
-                     <span>Dashboard</span>
+                        <SearchIcon className="icon"/>
+                     <span>Search</span>
                     </li>
                 </ul>
             </div>
-            <div className="bottom">color options</div>
+            <div className="bottom">
+                <div className="colorOption"></div>
+                <div className="colorOption"></div>
+                <div className="colorOption"></div>
+            </div>
         </div>
      );
 }
