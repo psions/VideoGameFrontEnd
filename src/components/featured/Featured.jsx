@@ -1,5 +1,6 @@
 import "./featured.scss"
 import MoreVertIcon from '@mui/icons-material/MoreVert';
+import DisplayChart from "../chart/DisplayChart";
 
 const Featured = () => {
   return (
@@ -10,7 +11,7 @@ const Featured = () => {
       </div>
       <div className="bottom">
         <div className="featuredChart">
-          
+          <DisplayChart/>
         </div>
       </div>
     </div>
