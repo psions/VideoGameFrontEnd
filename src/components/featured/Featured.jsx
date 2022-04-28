@@ -1,7 +1,7 @@
 import "./featured.scss"
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import DisplayChart from "../chart/DisplayChart";
-import Datatable from "../datatable/Datatable";
+// import Datatable from "../datatable/Datatable";
 
 const Featured = () => {
   return (
@@ -13,7 +13,7 @@ const Featured = () => {
       <div className="bottom">
         <div className="featuredChart">
           <DisplayChart/>
-          <Datatable/>
+          {/* <Datatable/> */}
         </div>
       </div>
     </div>
